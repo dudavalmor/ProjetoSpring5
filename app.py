@@ -9,12 +9,12 @@ st.header("Análise de Anúncio de Veículos")
 hist_button = st.button("Criar Histograma de Preços")
 
 if hist_button:
-    st.write("Criando um histograma mostrando a distribuição dos preços dos veículos")
+    st.write("Distribuição dos preços dos veículos")
     
     fig = px.histogram(
         car_data,
         x='price',
-        title='Distribuição de Quilometragem dos Veículos',
+        title='Distribuição dos preços dos veículos',
         nbins=50
     )
     
